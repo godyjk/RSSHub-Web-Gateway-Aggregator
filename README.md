@@ -261,7 +261,6 @@ RSSHUB_PORT=1200
 ```
 rsshub-web-gateway/
 ├── .env                    # 环境变量配置文件
-├── .env.example           # 环境变量示例
 ├── start.js               # 一键启动脚本
 ├── application-controller/ # Java 网关
 │   ├── interfaceServer.java
@@ -270,10 +269,18 @@ rsshub-web-gateway/
 │   ├── index.html
 │   ├── server.js
 │   └── package.json
-└── rsshub/                # RSSHub 实例（需单独部署）
-    ├── lib/
-    ├── routes/
-    └── package.json
+└── data-scraper/
+    ├── js-abolished/           # 废弃的 JavaScript 脚本目录
+    └── mjs-new/               # 新的 ECMAScript 模块脚本目录
+        ├── logs/              # 日志目录
+        ├── twitter-keyword.mjs    # Twitter 关键词搜索脚本
+        ├── twitter-timeline.mjs   # Twitter 时间线获取脚本
+        ├── twitter-user.mjs       # Twitter 用户信息获取脚本
+        ├── weibo-hot.mjs          # 微博热搜获取脚本
+        ├── weibo-keyword.mjs      # 微博关键词搜索脚本
+        ├── weibo-user.mjs         # 微博用户信息获取脚本
+        ├── zhihu-hot.mjs          # 知乎热榜获取脚本
+        └── zhihu-user.mjs         # 知乎用户信息获取脚本
 ```
 
 ## 🤝 贡献指南
