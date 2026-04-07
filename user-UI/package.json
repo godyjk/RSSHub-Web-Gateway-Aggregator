@@ -1,0 +1,13 @@
+{
+  "name": "data-catch-ui",
+  "version": "1.0.0",
+  "description": "简单的数据抓取工具界面",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "axios": "^1.14.0",
+    "express": "^4.22.1"
+  }
+}
